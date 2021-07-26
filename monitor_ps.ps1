@@ -1,6 +1,9 @@
 ﻿$watcher = New-Object System.IO.FileSystemWatcher
 $watcher.IncludeSubdirectories = $false
-$watcher.Path = 'C:\Users\Dell\Pictures\Screenshots'
+
+$userName = $(whoami)
+$targetPath = 'C:\Users\'+$userName+'\Pictures\Screenshots'
+$watcher.Path = $targetPath
 $watcher.EnableRaisingEvents = $true
 $action =
 {
