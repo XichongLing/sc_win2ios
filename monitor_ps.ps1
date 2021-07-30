@@ -3,7 +3,7 @@ $watcher = New-Object System.IO.FileSystemWatcher
 $watcher.IncludeSubdirectories = $false
 
 #specify target folder
-$targetPath = 'C:\Users\Dell\Pictures\Screenshots'
+$targetPath = $env:USERPROFILE +'\Pictures\Screenshots'
 $watcher.Path = $targetPath
 $watcher.EnableRaisingEvents = $true
 
