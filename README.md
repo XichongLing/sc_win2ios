@@ -1,4 +1,5 @@
 # sc_win2ios
+A tiny tool to automatically send screenshots from windows to ios when watching lectures on your laptop and taking notes on other devices.
 - Run monitor_ps in PowerShell ISE, type a name for new folder at the prompt of "build a transfer folder on Desktop", which will leave a folder on your desktop.
 
 - add sharing properties to the new folder
