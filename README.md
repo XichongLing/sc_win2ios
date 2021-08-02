@@ -15,3 +15,5 @@ A tiny tool to automatically send screenshots from windows to ios when watching 
   - On the prompted page, Enter yor profile as User Name, the password should be that of your microsoft account.
 
 The program assumes your screenshots folder is located in default path. If you have ever moved it, refer to register key under HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\{B7BEDE81-DF94-4682-A7D8-57A52620B86F}, the value being your working screenshots directory, edit in your favor.
+
+To disable folder monitor, use command "get-eventsubscriber -force | unregister-event -force" in console, after which your screenshots will no longer be forwarded to transfer folder. To disconnect, simply delete the sharing folder on your ios device.
