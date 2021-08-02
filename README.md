@@ -13,3 +13,5 @@ A tiny tool to automatically send screenshots from windows to ios when watching 
   - In Files, click "..." icon under browse tab, choose "Connect to Server"
   - Enter server name in such form : smb://, followed by IPv4 address mentioned above, click on Connect.
   - On the prompted page, Enter yor profile as User Name, the password should be that of your microsoft account.
+
+The program assumes your screenshots folder is located in default path. If you have ever moved it, refer to register key under HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\{B7BEDE81-DF94-4682-A7D8-57A52620B86F}, the value being your working screenshots directory, edit in your favor.
